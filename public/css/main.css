@@ -1,0 +1,11 @@
+/*
+Le style générique de note application
+*/
+
+body {
+    background-color: #e0e0e0;
+}
+
+h1.title {
+    color: white;
+}

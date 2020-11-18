@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Detail produit{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/detail.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div>
+        <p class="detail-text">{{ id_product }}</p>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/detail.js') }}"></script>
+{% endblock %}
