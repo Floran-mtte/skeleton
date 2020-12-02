@@ -76,4 +76,65 @@ class ProductController extends AbstractController
         }
         return new Response("test");
     }
+
+    /**
+     * Update an entity
+     * @Route("/update", name="product_update")
+     * @param EntityManagerInterface $entityManager
+     * @return Response
+     */
+    public function update(EntityManagerInterface $entityManager): Response
+    {
+        $productRepository = $entityManager->getRepository(Product::class);
+        /**
+         * @var $product Product
+         */
+        $product = $productRepository->find(2);
+
+        $product->setPrice(809);
+        $entityManager->flush();
+
+        return new Response("test");
+    }
+
+    /**
+     * Delete an entity
+     * @Route("/delete", name="product_delete")
+     * @param EntityManagerInterface $entityManager
+     * @return Response
+     */
+    public function delete(EntityManagerInterface $entityManager): Response
+    {
+        $productRepository = $entityManager->getRepository(Product::class);
+        /**
+         * @var $product Product
+         */
+        $product = $productRepository->find(2);
+
+        $entityManager->remove($product);
+        $entityManager->flush();
+
+        return new Response("test");
+    }
+
+    /**
+     * Custom find
+     * @Route("/test", name="product_delete")
+     * @param EntityManagerInterface $entityManager
+     * @return Response
+     */
+    public function test(EntityManagerInterface $entityManager): Response
+    {
+        $productRepository = $entityManager->getRepository(Product::class);
+        /**
+         * @var $product Product
+         */
+        $products = $productRepository->findAndOrderBy(1);
+
+        foreach ($products as $product) {
+            var_dump($product->getName());
+        }
+
+        return new Response("test");
+    }
 }
