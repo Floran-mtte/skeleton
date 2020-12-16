@@ -63,3 +63,13 @@ Output SQL to be executed to update the database
 Update the database
 
 `php bin/console doctrine:schema:update --force`
+
+## S4 📚
+
+**Add symfony/form to our project**
+
+`composer require symfony/form`
+
+**Create a new form type**
+
+`php bin/console make:form FormType`

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div>
+    <form method="post">
+        {{ form_row(form._token) }}
+        {{ form_label(form.name, null,{'label_attr': {'class': 'label'}}) }}
+        {{ form_widget(form.name) }}
+        {{ form_errors(form.name) }}
+
+        {{ form_label(form.price, null,{'label_attr': {'class': 'label'}}) }}
+        {{ form_widget(form.price) }}
+        {{ form_errors(form.price) }}
+
+        {{ form_label(form.brand, null,{'label_attr': {'class': 'label'}}) }}
+        {{ form_widget(form.brand) }}
+        {{ form_errors(form.brand) }}
+
+        <input type="submit">
+    </form>
+</div>
+{% endblock %}

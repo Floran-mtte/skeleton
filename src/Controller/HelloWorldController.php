@@ -24,5 +24,4 @@ class HelloWorldController extends AbstractController
     public function detailProduit($id) {
         return $this->render('hello_world/detail.html.twig', ['id_product' => $id]);
     }
-
 }
