@@ -17,6 +17,7 @@ class ProductType extends AbstractType
         $builder
             ->add('name', TextType::class, [
                 'attr' => [
+                    'class' => 'input-row',
                     'data-survey' => 'address_lift'
                 ],
             ])

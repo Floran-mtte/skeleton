@@ -73,3 +73,25 @@ Update the database
 **Create a new form type**
 
 `php bin/console make:form FormType`
+
+## S5 📚
+
+**Add the security bundle to our project**
+
+`composer require symfony/security-bundle`
+
+**Use the maker bundle to create the User entity**
+
+`php bin/console make:user`
+
+**Update the database**
+
+`php bin/console  doctrine:schema:update --force`
+
+**Use the maker bundle to create the auth**
+
+`php bin/console make:auth`
+
+**Little command to manually encode a password**
+
+php bin/console security:encode-password`
