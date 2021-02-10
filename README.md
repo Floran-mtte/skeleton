@@ -96,7 +96,7 @@ Update the database
 
 `php bin/console security:encode-password`
 
-## S6
+## S6 📚
 
 **Install mailer component**
 
@@ -108,5 +108,6 @@ Update the database
 
 **Install twig mailing**
 
-`composer require symfony/twig-bundle `
+`composer require symfony/twig-bundle`
+
 `composer require twig/cssinliner-extra`
