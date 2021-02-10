@@ -1,0 +1,138 @@
+/*
+*
+*   CSS containing navbar, footer and common style for the website
+*
+ */
+
+
+/*
+    Font-face declaration for the project
+ */
+
+@font-face {
+    font-family: "Oswald-regular";
+    src: url("../fonts/Oswald-regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Oswald-bold";
+    src: url("../fonts/Oswald-bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../fonts/Raleway-Regular.ttf") format("ttf")
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("../fonts/Raleway-Bold.ttf") format("ttf")
+}
+
+
+@font-face {
+    font-family: "Monoton-Regular";
+    src: url("../fonts/Monoton-regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../fonts/OpenSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Merriweather-regular";
+    src: url("../fonts/MerriweatherSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Merriweather-bold";
+    src: url("../fonts/MerriweatherSans-Bold.ttf") format("ttf");
+}
+
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Oswald-bold, sans-serif;
+    font-size: 15px;
+    color: grey;
+    text-align: left;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.logo-part-1 {
+    font-family: Oswald-regular, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.logo-part-2 {
+    font-size: 35px;
+    font-family: Oswald-bold, sans-serif;
+    color: white;
+}
+
+.submit-btn {
+    width: 100px;
+    background: black;
+    color: white;
+    font-family: Oswald-Regular, sans-serif;
+    border-radius: 5px;
+    border: none;
+    outline-style: none;
+    padding: 6px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    align-self: center;
+    font-size: 13px;
+}
+
+.form-content-title {
+    font-family: Merriweather-regular, sans-serif;
+}
+
+
+.form-content-title {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.id-account {
+    margin: 0;
+    font-weight: bold;
+}
+
+.my-account {
+    color: white;
+}
+
+.form-text {
+    margin-bottom: 2px;
+    font-family: Merriweather-regular, sans-serif;
+}
+
+.form-text-sign {
+    font-family: Merriweather-regular, sans-serif;
+    margin: 0;
+}
+
+.sign-up-title {
+    width: 100%;
+    text-align: center;
+    background: black;
+}
+
+.sign-up-body {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+}

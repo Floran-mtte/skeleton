@@ -86,7 +86,7 @@ Update the database
 
 **Update the database**
 
-`php bin/console  doctrine:schema:update --force`
+`php bin/console doctrine:schema:update --force`
 
 **Use the maker bundle to create the auth**
 
@@ -94,4 +94,19 @@ Update the database
 
 **Little command to manually encode a password**
 
-php bin/console security:encode-password`
+`php bin/console security:encode-password`
+
+## S6
+
+**Install mailer component**
+
+`composer require symfony/mailer`
+
+**Install transport**
+
+`composer require symfony/mailgun-mailer`
+
+**Install twig mailing**
+
+`composer require symfony/twig-bundle `
+`composer require twig/cssinliner-extra`

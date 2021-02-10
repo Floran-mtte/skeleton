@@ -1,0 +1,28 @@
+<body>
+{% apply inline_css(source('@css/email.css')) %}
+    <table  class="sign-up-title" align="center" cellspacing="15">
+        <tr class="sign-up-head">
+            <td>
+                <a href="/" class="home-button">
+                    <span class="logo-part-1">ATMOSPHERE</span>
+                    <span class="logo-part-2">CBD</span>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <table class="sign-up-body" align="center">
+        <tr>
+            <td>
+                <p class="form-content-title">Hi {{ firstName }},</p>
+                <p class="form-text">Thanks for registering on cbdatmopshere,</p>
+                <p class="form-text">You can now have access to your account with your id :</p>
+                <p class="form-text"><a href="#">{{ customerEmail }}</a></p>
+                <p class="form-text">We wish you a good visit on our website,</p>
+                <p class="form-text-sign">AtmosphereCBD</p>
+                <button class="submit-btn"><a class="my-account" href="{{ url }}">My account</a></button>
+            </td>
+        </tr>
+    </table>
+{% endapply %}
+</body>
