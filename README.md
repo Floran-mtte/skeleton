@@ -111,3 +111,13 @@ Update the database
 `composer require symfony/twig-bundle`
 
 `composer require twig/cssinliner-extra`
+
+## S7 📚
+
+**Create a new Command**
+
+`php bin/console make:command`
+
+**Run the Command**
+
+`php bin/console command-name`

@@ -15,6 +15,7 @@ class MailerController extends AbstractController
     /**
      * @Route("/email")
      * @param MailerInterface $mailer
+     * @return Response
      * @throws \Symfony\Component\Mailer\Exception\TransportExceptionInterface
      */
     public function sendEmail(MailerInterface $mailer)
